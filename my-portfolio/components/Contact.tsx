@@ -7,8 +7,8 @@ export function Contact() {
     <Section id="contact" eyebrow="Contact" title="Let's talk">
       <p className="max-w-xl text-lg leading-relaxed text-muted text-pretty">
         {profile.openToWork
-          ? "I'm open to software roles and happy to talk through any of the work above. The fastest way to reach me is email."
-          : "Happy to talk through any of the work above — the fastest way to reach me is email."}
+          ? "I enjoy working on a full stack with an emphasis on AI and am open to new opportunities. I'm happy to talk through any of the work above, the fastest way to reach me is by email:"
+          : "I'm happy to talk through any of the work above — the fastest way to reach me is by email."}
       </p>
       <p className="mt-4">
         <a

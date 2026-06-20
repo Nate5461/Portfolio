@@ -33,7 +33,7 @@ export function SocialLinks({
         variant={variant}
         icon={<DocumentIcon />}
       >
-        Résumé
+        Resume
       </LinkButton>
       <LinkButton
         href={`mailto:${profile.email}`}

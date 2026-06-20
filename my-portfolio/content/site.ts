@@ -60,10 +60,10 @@ export const nav: NavItem[] = [
 ];
 
 export const about: string[] = [
-  "I'm a software engineer with about a year of professional experience spanning an unusually wide stack for a junior — real-time backend systems, production AI/LLM services, cloud, full-stack web, iOS, and embedded/IoT.",
+  "I'm a software engineer with over a year of professional experience spanning a wide stack for a junior developer — real-time backend systems, production AI/LLM services, cloud, full-stack web, iOS, and embedded/IoT.",
   "Most recently at FUH I worked on the architecture behind Emma, a real-time presence and calling system, and an AI clinical-intake service that turns conversation into validated structured data.", // TODO: confirm your exact role/title at FUH.
   "I like owning problems end-to-end — from sensors and embedded firmware, up through distributed backends, to the screen in someone's hand.",
-  "Right now I'm building Tippsy, a Go + Postgres + iOS app, and I'm open to software roles.",
+  "Right now I'm building Tippsy, a Go + Postgres + iOS app.",
 ];
 
 /** Tippsy */
@@ -91,7 +91,7 @@ export const tippsy = {
         "A native client for a fast, platform-native feel — and since I build iOS, the whole stack stays first-party and end-to-end mine.",
     },
   ],
-  
+
   buildLog: [
     {
       title: "REST over GraphQL",
@@ -117,11 +117,10 @@ export const tippsy = {
   } as LinkSet & { backend?: string },
 };
 
-/** FUH — the punch-above-weight piece. NDA-safe, pattern-level only. */
 export const fuh = {
   heading: "Systems work at FUH",
   intro:
-    "My strongest work is under NDA, so I can't share the code. What I can share is how the systems were designed — the patterns, the trade-offs, and my role. No proprietary code, no client or business specifics.",
+    "My strongest work is under NDA, so I can't share the code. But I can share some of the design and reasoning around two major projects.",
   roleNote: "TODO: your role/title and scope on this work.",
   cases: [
     {
@@ -190,26 +189,6 @@ export const fuh = {
 
 export const projects: Project[] = [
   {
-    slug: "lolabees",
-    name: "LolaBees",
-    tagline: "Hardware + cloud for healthier hives.",
-    problem:
-      "Beekeepers lose hives to conditions they can't see until it's too late — by the time a colony shows visible trouble, the loss is often already underway.",
-    // TODO: sharpen YOUR specific individual contribution (e.g. "owned the
-    role:
-      "Led a team of 4, owning the end-to-end system design across the sensor hardware and the cloud dashboard.",
-    // TODO: add the language + cloud provider you actually used.
-    stack: ["Embedded / IoT", "Sensors + firmware", "Cloud dashboard"],
-    outcomes: [
-      "2nd place out of 13 teams",
-      "~40% reduction in hive loss",
-      "Real hardware feeding a live cloud dashboard",
-    ],
-    links: {
-      github: "https://github.com/Nate5461/LolaBees",
-    },
-  },
-  {
     slug: "cheer",
     name: "Cheer",
     tagline: "Accessible, deployed full-stack web app.",
@@ -228,6 +207,26 @@ export const projects: Project[] = [
       github: "https://github.com/Nate5461/cheer",
       live: undefined, // not live yet — renders only once a real URL exists
       demo: undefined, // TODO: optional screen recording if you record one
+    },
+  },
+  {
+    slug: "lolabees",
+    name: "LolaBees",
+    tagline: "Hardware + cloud for healthier hives.",
+    problem:
+      "Beekeepers lose hives to conditions they can't see until it's too late — by the time a colony shows visible trouble, the loss is often already underway.",
+    // TODO: sharpen YOUR specific individual contribution (e.g. "owned the
+    role:
+      "Led a team of 4, owning the end-to-end system design across the sensor hardware and the cloud dashboard.",
+    // TODO: add the language + cloud provider you actually used.
+    stack: ["Embedded / IoT", "Sensors + firmware", "Cloud dashboard"],
+    outcomes: [
+      "2nd place out of 13 teams",
+      "~40% reduction in hive loss",
+      "Real hardware feeding a live cloud dashboard",
+    ],
+    links: {
+      github: "https://github.com/Nate5461/LolaBees",
     },
   },
 ];
